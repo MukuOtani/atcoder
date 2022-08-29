@@ -13,8 +13,8 @@ using namespace std;
 #define PB push_back
 #define MP make_pair
 #define SP << " " <<
-const int INF = 1001001001;
-const ll LINF = 100100100100100100;
+const int INF = numeric_limits<int>::max();
+const ll LINF = numeric_limits<ll>::max();
 const double EPS = 1e-10;
 const long double PI  = acos(-1.0L);
 typedef pair<int,int> PII;
