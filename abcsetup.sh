@@ -18,13 +18,13 @@ fi
 mkdir -p submissions/abc/abc$1
 echo "CREATE submissions/abc/abc$1"
 
-cp -i templates/template.cpp submissions/abc/abc$1/a.cpp
-cp -i templates/template.cpp submissions/abc/abc$1/b.cpp
-cp -i templates/template.cpp submissions/abc/abc$1/c.cpp
-cp -i templates/template.cpp submissions/abc/abc$1/d.cpp
-cp -i templates/template.cpp submissions/abc/abc$1/e.cpp
-cp -i templates/template.cpp submissions/abc/abc$1/f.cpp
-cp -i templates/template.cpp submissions/abc/abc$1/g.cpp
-cp -i templates/template.cpp submissions/abc/abc$1/h.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/a.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/b.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/c.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/d.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/e.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/f.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/g.cpp
+cp -i templates/cpp/template.cpp submissions/abc/abc$1/h.cpp
 
 exit 0
