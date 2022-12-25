@@ -1,6 +1,6 @@
 package templates
 
-func binarySearch(array []int, target int) (bool, int) {
+func BinarySearch(array []int, target int) (bool, int) {
 	low, high, mid := 0, len(array)-1, 0
 	for low <= high {
 		mid = (low + high) / 2

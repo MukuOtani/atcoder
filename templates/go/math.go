@@ -2,7 +2,7 @@ package templates
 
 import "math"
 
-func isPrime(target int) bool {
+func IsPrime(target int) bool {
 	for i := 2; i <= int(math.Pow(float64(target), 0.5)); i++ {
 		if target%i == 0 {
 			return false
@@ -28,7 +28,7 @@ func Lcm(x, y int) int {
 	return (x * y) / gcd
 }
 
-func modPow(a, b, mod int) int {
+func ModPow(a, b, mod int) int {
 	p, num := a, 1
 	for i := 0; i < 30; i++ {
 		if (b>>i)&1 == 1 {
@@ -39,11 +39,11 @@ func modPow(a, b, mod int) int {
 	return num
 }
 
-func modDiv(a, b, mod int) int {
-	return (a * modPow(b, mod-2, mod) % mod)
+func ModDiv(a, b, mod int) int {
+	return (a * ModPow(b, mod-2, mod) % mod)
 }
 
-func modNcr(n, r, mod int) int {
+func ModNcr(n, r, mod int) int {
 	a := 1
 	for i := 1; i <= n; i++ {
 		a = (a * i) % mod
@@ -55,5 +55,5 @@ func modNcr(n, r, mod int) int {
 	for i := 1; i <= n-r; i++ {
 		b = (b * i) % mod
 	}
-	return modDiv(a, b, mod)
+	return ModDiv(a, b, mod)
 }
