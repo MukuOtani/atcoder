@@ -2,6 +2,20 @@ package templates
 
 import "math"
 
+func Max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
+func Min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
 func IsPrime(target int) bool {
 	for i := 2; i <= int(math.Pow(float64(target), 0.5)); i++ {
 		if target%i == 0 {
